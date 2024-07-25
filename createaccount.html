@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreateAccount</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #section{
+            width: 100%;
+            /* height: 100%; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        #container{
+            margin-top: 100px;
+            width: 400px;
+            height: 500px;
+            /* background-color: antiquewhite; */
+            border: 1px solid black;
+            border-radius: 4px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+        }
+        input{
+            padding: 8px;
+            width: 250px;
+            border: 1px solid black;
+            background-color: white;
+            border-radius: 4px;
+        }
+        button{
+            padding: 7px;
+            width: 120px;
+            font-size: 16px;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="section">
+        <div id="container">
+            <h1>CreateAccount</h1>
+            <div>
+
+                <p>Email</p>
+                <input type="email"  id="signupemail" required>
+            </div>
+            <div>
+
+                <p>password</p>
+                <input type="password" id="signuppass" required> 
+            </div>
+           
+
+            <button id="createbtn">Submit</button>
+        </div>
+    </div>
+   
+
+
+    <script src="account.js" type="module"></script>
+</body>
+</html>
